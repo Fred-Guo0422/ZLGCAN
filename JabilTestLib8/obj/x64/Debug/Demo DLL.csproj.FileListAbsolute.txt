@@ -1,0 +1,12 @@
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\Test_DLL.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\Test_DLL.pdb
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\JabilTestCoreLibs.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\LV_Regular_Exp.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\NationalInstruments.LabVIEW.Interop.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\NationalInstruments.LabVIEW.RefnumTypes.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\bin\x64\Debug\LV_Regular_Exp.xml
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x64\Debug\Demo DLL.csprojAssemblyReference.cache
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x64\Debug\Demo DLL.csproj.CoreCompileInputs.cache
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x64\Debug\Demo DLL.csproj.CopyComplete
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x64\Debug\Test_DLL.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x64\Debug\Test_DLL.pdb

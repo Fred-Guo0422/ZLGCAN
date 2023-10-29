@@ -1,0 +1,7 @@
+D:\Git\zlgcan_demo\ZLG_USBCANFD\JabilTest075300\JabilTest_DLL_LV.xml
+D:\Git\zlgcan_demo\ZLG_USBCANFD\JabilTest075300\JabilTest_DLL_LV.dll
+D:\Git\zlgcan_demo\ZLG_USBCANFD\JabilTest075300\JabilTest_DLL_LV.pdb
+D:\Git\zlgcan_demo\ZLG_USBCANFD\Build\ZLG_USBCANFD\ZLG_USBCANFD\obj\Debug\Z_CANFD.csproj.CoreCompileInputs.cache
+D:\Git\zlgcan_demo\ZLG_USBCANFD\Build\ZLG_USBCANFD\ZLG_USBCANFD\obj\Debug\Z_CANFD.csproj.CopyComplete
+D:\Git\zlgcan_demo\ZLG_USBCANFD\Build\ZLG_USBCANFD\ZLG_USBCANFD\obj\Debug\JabilTest_DLL_LV.dll
+D:\Git\zlgcan_demo\ZLG_USBCANFD\Build\ZLG_USBCANFD\ZLG_USBCANFD\obj\Debug\JabilTest_DLL_LV.pdb

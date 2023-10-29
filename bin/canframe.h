@@ -1,7 +1,6 @@
 #ifndef CANFRAME_H_
 #define CANFRAME_H_
-
-
+#include "canframe.h"
 #include "typedef.h"
 
 /* special address description flags for the MAKE_CAN_ID */

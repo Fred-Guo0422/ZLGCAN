@@ -1,0 +1,23 @@
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.csproj.CoreCompileInputs.cache
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.csproj.AssemblyReference.cache
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\ZLG_USBCANFD_DLL.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\ZLG_USBCANFD_DLL.pdb
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\Jabil Test Configuration.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\Jabil Test Utilities.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\Jabil_Test_Base_Function.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\ScriptVariableSpaceInterface.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\TestCellInterface.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\JabilTestCommunicationLib.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\bin\x86\Debug\Jabil Test Configuration.dll.config
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.csproj.CopyComplete
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.dll
+E:\Software\ZLG_CAN_Demo_CSharp\JabilTestDLL\ZLG_USBCANFD_DLL\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.pdb
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.csproj.CoreCompileInputs.cache
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.csproj.CopyComplete
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x86\Debug\Test_DLL.dll
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x86\Debug\Test_DLL.pdb
+D:\Git\DLL_JabilTest750\Test_DLL.dll
+D:\Git\DLL_JabilTest750\Test_DLL.pdb
+D:\JabilTest075300\Test_DLL.dll
+D:\JabilTest075300\Test_DLL.pdb
+D:\Git\DLL_JabilTest750\ZLG_USBCANFD_DLL\obj\x86\Debug\ZLG_USBCANFD_DLL.csprojAssemblyReference.cache
