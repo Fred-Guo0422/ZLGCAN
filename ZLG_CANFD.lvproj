@@ -12,10 +12,11 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="JEMSDLL" Type="Folder">
-			<Item Name="ScriptVariableSpaceInterface.dll" Type="Document" URL="/D/JemsTS_8.40.00/Module_Interfaces/ScriptVariableSpaceInterface.dll"/>
+			<Item Name="ScriptVariableSpaceInterface.dll" Type="Document" URL="../../../JemsTS_8.40.00/Module_Interfaces/ScriptVariableSpaceInterface.dll"/>
 		</Item>
 		<Item Name="zlgcan.lvlib" Type="Library" URL="../zlgcan.lvlib"/>
 		<Item Name="TestVariables.vi" Type="VI" URL="../demo/TestVariables.vi"/>
+		<Item Name="【使用手册】ZLGCAN接口函数使用手册.pdf" Type="Document" URL="../【使用手册】ZLGCAN接口函数使用手册.pdf"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
@@ -50,11 +51,20 @@
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
+				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
+				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
+				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
+				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
+				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
 			</Item>
 			<Item Name="ZCAN_CloseDevice.vi" Type="VI" URL="../SubVI/lin/ZCAN_CloseDevice.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="zlgcan_wrap_LIN.dll" Type="Document" URL="../bin/zlgcan_wrap_LIN.dll"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="LV_ZLG_USBCANFD" Type=".NET Interop Assembly">
@@ -94,7 +104,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{09FD3022-FB8B-41F8-95C9-4BF7762DF174}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ParsesCANFDFrame.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ParsesCANFDFrame.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[10].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">14</Property>
@@ -149,7 +159,7 @@
 				<Property Name="Source[10].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[10].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Filter/ZCAN_FilterSheet(DTU).vi</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Filter/ZCAN_FilterSheet(DTU).vi</Property>
 				<Property Name="Source[11].type" Type="Str">VI</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[12].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">14</Property>
@@ -222,7 +232,7 @@
 				<Property Name="Source[12].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[12].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Getcn.vi</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Getcn.vi</Property>
 				<Property Name="Source[13].type" Type="Str">VI</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">8</Property>
@@ -267,29 +277,29 @@
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">6</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_GetDeviceInfo.vi</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_GetDeviceInfo.vi</Property>
 				<Property Name="Source[14].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[14].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN( CANET ).vi</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN( CANET ).vi</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN( I ).vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN( I ).vi</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(DTU).vi</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(DTU).vi</Property>
 				<Property Name="Source[17].type" Type="Str">VI</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(EU).vi</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(EU).vi</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(PCIeFD ).vi</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(PCIeFD ).vi</Property>
 				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ParsesCANFrame.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ParsesCANFrame.vi</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(USBCANFD).vi</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(USBCANFD).vi</Property>
 				<Property Name="Source[20].type" Type="Str">VI</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">0</Property>
@@ -346,20 +356,20 @@
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">8</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_OpenDevice.vi</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_OpenDevice.vi</Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[21].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_ReadChannelErrInfo.vi</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_ReadChannelErrInfo.vi</Property>
 				<Property Name="Source[22].type" Type="Str">VI</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_ReadChannelStatus.vi</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_ReadChannelStatus.vi</Property>
 				<Property Name="Source[23].type" Type="Str">VI</Property>
 				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_Receive.vi</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_Receive.vi</Property>
 				<Property Name="Source[24].type" Type="Str">VI</Property>
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[25].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/discarded/ZCAN_ReceiveData.vi</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ZCAN_ReceiveData.vi</Property>
 				<Property Name="Source[25].type" Type="Str">VI</Property>
 				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">0</Property>
@@ -398,23 +408,23 @@
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[26].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ResetCAN.vi</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ResetCAN.vi</Property>
 				<Property Name="Source[26].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[26].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[27].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Setcn.vi</Property>
+				<Property Name="Source[27].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Setcn.vi</Property>
 				<Property Name="Source[27].type" Type="Str">VI</Property>
 				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[28].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_SetRecvMerge.vi</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ZCAN_SetRecvMerge.vi</Property>
 				<Property Name="Source[28].type" Type="Str">VI</Property>
 				<Property Name="Source[29].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[29].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_SetResistanceEnable.vi</Property>
+				<Property Name="Source[29].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_SetResistanceEnable.vi</Property>
 				<Property Name="Source[29].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ParsesDATA.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ParsesDATA.vi</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="Source[30].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[30].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_StartCAN.vi</Property>
+				<Property Name="Source[30].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_StartCAN.vi</Property>
 				<Property Name="Source[30].type" Type="Str">VI</Property>
 				<Property Name="Source[31].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[31].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">3</Property>
@@ -485,76 +495,76 @@ FrameType：
 				<Property Name="Source[31].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[31].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[32].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[32].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_Transmit.vi</Property>
+				<Property Name="Source[32].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Queue/ZCAN_Transmit.vi</Property>
 				<Property Name="Source[32].type" Type="Str">VI</Property>
 				<Property Name="Source[33].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[33].itemID" Type="Ref"></Property>
 				<Property Name="Source[33].type" Type="Str">VI</Property>
 				<Property Name="Source[34].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[34].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_CHANNEL_ERROR_INFO.ctl</Property>
+				<Property Name="Source[34].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_CHANNEL_ERROR_INFO.ctl</Property>
 				<Property Name="Source[34].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[34].type" Type="Str">VI</Property>
 				<Property Name="Source[35].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[35].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_CHANNEL_STATUS.ctl</Property>
+				<Property Name="Source[35].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_CHANNEL_STATUS.ctl</Property>
 				<Property Name="Source[35].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[35].type" Type="Str">VI</Property>
 				<Property Name="Source[36].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[36].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_DEVICE_INFO.ctl</Property>
+				<Property Name="Source[36].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_DEVICE_INFO.ctl</Property>
 				<Property Name="Source[36].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[36].type" Type="Str">VI</Property>
 				<Property Name="Source[37].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[37].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_CANET.ctl</Property>
+				<Property Name="Source[37].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_CANET.ctl</Property>
 				<Property Name="Source[37].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[37].type" Type="Str">VI</Property>
 				<Property Name="Source[38].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[38].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_DTU.ctl</Property>
+				<Property Name="Source[38].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_DTU.ctl</Property>
 				<Property Name="Source[38].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[38].type" Type="Str">VI</Property>
 				<Property Name="Source[39].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[39].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_EU.ctl</Property>
+				<Property Name="Source[39].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_EU.ctl</Property>
 				<Property Name="Source[39].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[39].type" Type="Str">VI</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/U16ToByte.vi</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/U16ToByte.vi</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[40].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[40].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_EU_filter.ctl</Property>
+				<Property Name="Source[40].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_EU_filter.ctl</Property>
 				<Property Name="Source[40].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[40].type" Type="Str">VI</Property>
 				<Property Name="Source[41].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[41].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_I.ctl</Property>
+				<Property Name="Source[41].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_I.ctl</Property>
 				<Property Name="Source[41].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[41].type" Type="Str">VI</Property>
 				<Property Name="Source[42].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[42].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_PCIEFD.ctl</Property>
+				<Property Name="Source[42].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_PCIEFD.ctl</Property>
 				<Property Name="Source[42].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[42].type" Type="Str">VI</Property>
 				<Property Name="Source[43].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[43].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_USBCANFD.ctl</Property>
+				<Property Name="Source[43].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_USBCANFD.ctl</Property>
 				<Property Name="Source[43].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[43].type" Type="Str">VI</Property>
 				<Property Name="Source[44].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[44].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_Transmit_Data(Queue).ctl</Property>
+				<Property Name="Source[44].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_Transmit_Data(Queue).ctl</Property>
 				<Property Name="Source[44].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[44].type" Type="Str">VI</Property>
 				<Property Name="Source[45].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[45].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_Transmit_Data.ctl</Property>
+				<Property Name="Source[45].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_Transmit_Data.ctl</Property>
 				<Property Name="Source[45].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[45].type" Type="Str">VI</Property>
 				<Property Name="Source[46].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[46].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_TransmitFD_Data(Queue).ctl</Property>
+				<Property Name="Source[46].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_TransmitFD_Data(Queue).ctl</Property>
 				<Property Name="Source[46].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[46].type" Type="Str">VI</Property>
 				<Property Name="Source[47].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[47].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_TransmitFD_Data.ctl</Property>
+				<Property Name="Source[47].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_TransmitFD_Data.ctl</Property>
 				<Property Name="Source[47].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[47].type" Type="Str">VI</Property>
 				<Property Name="Source[48].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[48].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_TransmitFD_frame.ctl</Property>
+				<Property Name="Source[48].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_TransmitFD_frame.ctl</Property>
 				<Property Name="Source[48].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[48].type" Type="Str">VI</Property>
 				<Property Name="Source[49].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[49].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCANDataObj.ctl</Property>
+				<Property Name="Source[49].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCANDataObj.ctl</Property>
 				<Property Name="Source[49].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[49].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
@@ -594,7 +604,7 @@ FrameType：
 				<Property Name="Source[5].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[5].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[5].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ClearBuffer.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ClearBuffer.vi</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[5].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[50].destinationIndex" Type="Int">0</Property>
@@ -664,7 +674,7 @@ FrameType：
 				<Property Name="Source[50].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[50].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[50].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">10</Property>
-				<Property Name="Source[50].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Start_CAN.vi</Property>
+				<Property Name="Source[50].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Start_CAN.vi</Property>
 				<Property Name="Source[50].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[50].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[51].destinationIndex" Type="Int">0</Property>
@@ -728,11 +738,11 @@ FrameType：
 				<Property Name="Source[51].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[51].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[51].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">9</Property>
-				<Property Name="Source[51].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_SEND.vi</Property>
+				<Property Name="Source[51].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_SEND.vi</Property>
 				<Property Name="Source[51].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[51].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[52].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[52].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Receive_Data.vi</Property>
+				<Property Name="Source[52].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Receive_Data.vi</Property>
 				<Property Name="Source[52].type" Type="Str">VI</Property>
 				<Property Name="Source[53].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[53].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">0</Property>
@@ -877,7 +887,7 @@ FrameType：
 				<Property Name="Source[54].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[54].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[54].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">12</Property>
-				<Property Name="Source[54].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Send&amp;Receive.vi</Property>
+				<Property Name="Source[54].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Send&amp;Receive.vi</Property>
 				<Property Name="Source[54].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[54].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[55].destinationIndex" Type="Int">0</Property>
@@ -929,7 +939,7 @@ FrameType：
 				<Property Name="Source[55].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[55].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[55].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">7</Property>
-				<Property Name="Source[55].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ReceiveByType.vi</Property>
+				<Property Name="Source[55].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ReceiveByType.vi</Property>
 				<Property Name="Source[55].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[55].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[56].destinationIndex" Type="Int">0</Property>
@@ -981,7 +991,7 @@ FrameType：
 				<Property Name="Source[56].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[56].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[56].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">7</Property>
-				<Property Name="Source[56].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ApplyAutoSend.vi</Property>
+				<Property Name="Source[56].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ApplyAutoSend.vi</Property>
 				<Property Name="Source[56].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[56].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[57].destinationIndex" Type="Int">0</Property>
@@ -1045,13 +1055,13 @@ FrameType：
 				<Property Name="Source[57].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[57].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[57].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">9</Property>
-				<Property Name="Source[57].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_SetAutoSend.vi</Property>
+				<Property Name="Source[57].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_SetAutoSend.vi</Property>
 				<Property Name="Source[57].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[57].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[58].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[58].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[58].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[58].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/bin</Property>
+				<Property Name="Source[58].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/bin</Property>
 				<Property Name="Source[58].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[58].type" Type="Str">Container</Property>
 				<Property Name="Source[59].destinationIndex" Type="Int">0</Property>
@@ -1095,7 +1105,7 @@ FrameType：
 				<Property Name="Source[6].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[6].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[6].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_CloseDevice.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_CloseDevice.vi</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[6].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[60].destinationIndex" Type="Int">0</Property>
@@ -1163,14 +1173,14 @@ FrameType：
 				<Property Name="Source[61].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[61].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[61].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">9</Property>
-				<Property Name="Source[61].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Queue/ZCAN_Transmit_Queue.vi</Property>
+				<Property Name="Source[61].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ZCAN_Transmit_Queue.vi</Property>
 				<Property Name="Source[61].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[61].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Filter/ZCAN_Filter(DTU).vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Filter/ZCAN_Filter(DTU).vi</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Filter/ZCAN_Filter.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Filter/ZCAN_Filter.vi</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[9].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">14</Property>
@@ -1278,19 +1288,19 @@ FrameType：
 				<Property Name="Source[0].itemID" Type="Str">{B2AD9054-37A3-435C-BD0C-51D3ECEA94BC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ParsesCANFDFrame.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ParsesCANFDFrame.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[10].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_FilterClear.vi</Property>
 				<Property Name="Source[10].type" Type="Str">VI</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Filter/ZCAN_FilterSheet(DTU).vi</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Filter/ZCAN_FilterSheet(DTU).vi</Property>
 				<Property Name="Source[11].type" Type="Str">VI</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[12].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_FilterSheet.vi</Property>
 				<Property Name="Source[12].type" Type="Str">VI</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Getcn.vi</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Getcn.vi</Property>
 				<Property Name="Source[13].type" Type="Str">VI</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">8</Property>
@@ -1335,29 +1345,29 @@ FrameType：
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[14].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">6</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_GetDeviceInfo.vi</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_GetDeviceInfo.vi</Property>
 				<Property Name="Source[14].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[14].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN( CANET ).vi</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN( CANET ).vi</Property>
 				<Property Name="Source[15].type" Type="Str">VI</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN( I ).vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN( I ).vi</Property>
 				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(DTU).vi</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(DTU).vi</Property>
 				<Property Name="Source[17].type" Type="Str">VI</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(EU).vi</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(EU).vi</Property>
 				<Property Name="Source[18].type" Type="Str">VI</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(PCIeFD ).vi</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(PCIeFD ).vi</Property>
 				<Property Name="Source[19].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ParsesCANFrame.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ParsesCANFrame.vi</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Init/ZCAN_InitCAN(USBCANFD).vi</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Init/ZCAN_InitCAN(USBCANFD).vi</Property>
 				<Property Name="Source[20].type" Type="Str">VI</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">0</Property>
@@ -1414,20 +1424,20 @@ FrameType：
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[21].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">8</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_OpenDevice.vi</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_OpenDevice.vi</Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[21].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_ReadChannelErrInfo.vi</Property>
+				<Property Name="Source[22].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_ReadChannelErrInfo.vi</Property>
 				<Property Name="Source[22].type" Type="Str">VI</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_ReadChannelStatus.vi</Property>
+				<Property Name="Source[23].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_ReadChannelStatus.vi</Property>
 				<Property Name="Source[23].type" Type="Str">VI</Property>
 				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_Receive.vi</Property>
+				<Property Name="Source[24].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_Receive.vi</Property>
 				<Property Name="Source[24].type" Type="Str">VI</Property>
 				<Property Name="Source[25].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[25].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/discarded/ZCAN_ReceiveData.vi</Property>
+				<Property Name="Source[25].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ZCAN_ReceiveData.vi</Property>
 				<Property Name="Source[25].type" Type="Str">VI</Property>
 				<Property Name="Source[26].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">0</Property>
@@ -1466,98 +1476,98 @@ FrameType：
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[26].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[26].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ResetCAN.vi</Property>
+				<Property Name="Source[26].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ResetCAN.vi</Property>
 				<Property Name="Source[26].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[26].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[27].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[27].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Setcn.vi</Property>
+				<Property Name="Source[27].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Setcn.vi</Property>
 				<Property Name="Source[27].type" Type="Str">VI</Property>
 				<Property Name="Source[28].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[28].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_SetRecvMerge.vi</Property>
+				<Property Name="Source[28].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ZCAN_SetRecvMerge.vi</Property>
 				<Property Name="Source[28].type" Type="Str">VI</Property>
 				<Property Name="Source[29].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[29].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_SetResistanceEnable.vi</Property>
+				<Property Name="Source[29].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_SetResistanceEnable.vi</Property>
 				<Property Name="Source[29].type" Type="Str">VI</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ParsesDATA.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Queue/ParsesDATA.vi</Property>
 				<Property Name="Source[3].type" Type="Str">VI</Property>
 				<Property Name="Source[30].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[30].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_StartCAN.vi</Property>
+				<Property Name="Source[30].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/ZCAN_StartCAN.vi</Property>
 				<Property Name="Source[30].type" Type="Str">VI</Property>
 				<Property Name="Source[31].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[31].itemID" Type="Ref"></Property>
 				<Property Name="Source[31].type" Type="Str">VI</Property>
 				<Property Name="Source[32].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[32].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/ZCAN_Transmit.vi</Property>
+				<Property Name="Source[32].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Queue/ZCAN_Transmit.vi</Property>
 				<Property Name="Source[32].type" Type="Str">VI</Property>
 				<Property Name="Source[33].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[33].itemID" Type="Ref"></Property>
 				<Property Name="Source[33].type" Type="Str">VI</Property>
 				<Property Name="Source[34].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[34].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_CHANNEL_ERROR_INFO.ctl</Property>
+				<Property Name="Source[34].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_CHANNEL_ERROR_INFO.ctl</Property>
 				<Property Name="Source[34].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[34].type" Type="Str">VI</Property>
 				<Property Name="Source[35].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[35].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_CHANNEL_STATUS.ctl</Property>
+				<Property Name="Source[35].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_CHANNEL_STATUS.ctl</Property>
 				<Property Name="Source[35].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[35].type" Type="Str">VI</Property>
 				<Property Name="Source[36].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[36].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_DEVICE_INFO.ctl</Property>
+				<Property Name="Source[36].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_DEVICE_INFO.ctl</Property>
 				<Property Name="Source[36].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[36].type" Type="Str">VI</Property>
 				<Property Name="Source[37].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[37].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_CANET.ctl</Property>
+				<Property Name="Source[37].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_CANET.ctl</Property>
 				<Property Name="Source[37].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[37].type" Type="Str">VI</Property>
 				<Property Name="Source[38].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[38].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_DTU.ctl</Property>
+				<Property Name="Source[38].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_DTU.ctl</Property>
 				<Property Name="Source[38].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[38].type" Type="Str">VI</Property>
 				<Property Name="Source[39].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[39].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_EU.ctl</Property>
+				<Property Name="Source[39].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_EU.ctl</Property>
 				<Property Name="Source[39].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[39].type" Type="Str">VI</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/Sub/U16ToByte.vi</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/Sub/U16ToByte.vi</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[40].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[40].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_EU_filter.ctl</Property>
+				<Property Name="Source[40].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_EU_filter.ctl</Property>
 				<Property Name="Source[40].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[40].type" Type="Str">VI</Property>
 				<Property Name="Source[41].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[41].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_I.ctl</Property>
+				<Property Name="Source[41].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_I.ctl</Property>
 				<Property Name="Source[41].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[41].type" Type="Str">VI</Property>
 				<Property Name="Source[42].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[42].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_PCIEFD.ctl</Property>
+				<Property Name="Source[42].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_PCIEFD.ctl</Property>
 				<Property Name="Source[42].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[42].type" Type="Str">VI</Property>
 				<Property Name="Source[43].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[43].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_InitCAN_setting_USBCANFD.ctl</Property>
+				<Property Name="Source[43].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_InitCAN_setting_USBCANFD.ctl</Property>
 				<Property Name="Source[43].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[43].type" Type="Str">VI</Property>
 				<Property Name="Source[44].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[44].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_Transmit_Data(Queue).ctl</Property>
+				<Property Name="Source[44].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_Transmit_Data(Queue).ctl</Property>
 				<Property Name="Source[44].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[44].type" Type="Str">VI</Property>
 				<Property Name="Source[45].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[45].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_Transmit_Data.ctl</Property>
+				<Property Name="Source[45].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_Transmit_Data.ctl</Property>
 				<Property Name="Source[45].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[45].type" Type="Str">VI</Property>
 				<Property Name="Source[46].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[46].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_TransmitFD_Data(Queue).ctl</Property>
+				<Property Name="Source[46].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_TransmitFD_Data(Queue).ctl</Property>
 				<Property Name="Source[46].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[46].type" Type="Str">VI</Property>
 				<Property Name="Source[47].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[47].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_TransmitFD_Data.ctl</Property>
+				<Property Name="Source[47].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_TransmitFD_Data.ctl</Property>
 				<Property Name="Source[47].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[47].type" Type="Str">VI</Property>
 				<Property Name="Source[48].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[48].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCAN_TransmitFD_frame.ctl</Property>
+				<Property Name="Source[48].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCAN_TransmitFD_frame.ctl</Property>
 				<Property Name="Source[48].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[48].type" Type="Str">VI</Property>
 				<Property Name="Source[49].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[49].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/data_type/ZCANDataObj.ctl</Property>
+				<Property Name="Source[49].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/data_type/ZCANDataObj.ctl</Property>
 				<Property Name="Source[49].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[49].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
@@ -1597,7 +1607,7 @@ FrameType：
 				<Property Name="Source[5].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[5].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[5].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ClearBuffer.vi</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ClearBuffer.vi</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[5].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[50].destinationIndex" Type="Int">0</Property>
@@ -1667,7 +1677,7 @@ FrameType：
 				<Property Name="Source[50].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[50].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[50].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">10</Property>
-				<Property Name="Source[50].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Start_CAN.vi</Property>
+				<Property Name="Source[50].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Start_CAN.vi</Property>
 				<Property Name="Source[50].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[50].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[51].destinationIndex" Type="Int">0</Property>
@@ -1731,11 +1741,11 @@ FrameType：
 				<Property Name="Source[51].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[51].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[51].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">9</Property>
-				<Property Name="Source[51].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_SEND.vi</Property>
+				<Property Name="Source[51].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_SEND.vi</Property>
 				<Property Name="Source[51].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[51].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[52].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[52].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Receive_Data.vi</Property>
+				<Property Name="Source[52].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Receive_Data.vi</Property>
 				<Property Name="Source[52].type" Type="Str">VI</Property>
 				<Property Name="Source[53].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[53].ExportedAssemblyVI.VIProtoInfo[0]VIProtoConNum" Type="Int">0</Property>
@@ -1880,7 +1890,7 @@ FrameType：
 				<Property Name="Source[54].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[54].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[54].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">12</Property>
-				<Property Name="Source[54].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_Send&amp;Receive.vi</Property>
+				<Property Name="Source[54].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_Send&amp;Receive.vi</Property>
 				<Property Name="Source[54].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[54].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[55].destinationIndex" Type="Int">0</Property>
@@ -1932,7 +1942,7 @@ FrameType：
 				<Property Name="Source[55].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[55].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[55].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">7</Property>
-				<Property Name="Source[55].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ReceiveByType.vi</Property>
+				<Property Name="Source[55].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ReceiveByType.vi</Property>
 				<Property Name="Source[55].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[55].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[56].destinationIndex" Type="Int">0</Property>
@@ -1984,7 +1994,7 @@ FrameType：
 				<Property Name="Source[56].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[56].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[56].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">7</Property>
-				<Property Name="Source[56].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_ApplyAutoSend.vi</Property>
+				<Property Name="Source[56].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_ApplyAutoSend.vi</Property>
 				<Property Name="Source[56].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[56].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[57].destinationIndex" Type="Int">0</Property>
@@ -2048,13 +2058,13 @@ FrameType：
 				<Property Name="Source[57].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[57].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[57].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">9</Property>
-				<Property Name="Source[57].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_SetAutoSend.vi</Property>
+				<Property Name="Source[57].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_SetAutoSend.vi</Property>
 				<Property Name="Source[57].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[57].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[58].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[58].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[58].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[58].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/bin</Property>
+				<Property Name="Source[58].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/bin</Property>
 				<Property Name="Source[58].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[58].type" Type="Str">Container</Property>
 				<Property Name="Source[59].destinationIndex" Type="Int">0</Property>
@@ -2098,7 +2108,7 @@ FrameType：
 				<Property Name="Source[6].ExportedAssemblyVI.VIProtoInfoVIDocumentationEnabled" Type="Int">0</Property>
 				<Property Name="Source[6].ExportedAssemblyVI.VIProtoInfoVIIsNamesSanitized" Type="Int">1</Property>
 				<Property Name="Source[6].ExportedAssemblyVI.VIProtoInfoVIProtoItemCount" Type="Int">5</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_CloseDevice.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/ZCAN_CloseDevice.vi</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[6].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[60].destinationIndex" Type="Int">0</Property>
@@ -2182,10 +2192,10 @@ FrameType：
 				<Property Name="Source[61].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[61].type" Type="Str">ExportedAssemblyVI</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Filter/ZCAN_Filter(DTU).vi</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Filter/ZCAN_Filter(DTU).vi</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/Filter/ZCAN_Filter.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/CANFD/API/Filter/ZCAN_Filter.vi</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/我的电脑/zlgcan.lvlib/API/ZCAN_FilterAck.vi</Property>
